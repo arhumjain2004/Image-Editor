@@ -286,7 +286,29 @@ const presets = {
         sepia: 0,
         opacity: 100,
         invert: 100
-    }
+    },
+    cyberpunk: {
+    brightness: 110,
+    contrast: 160,
+    saturation: 150,
+    hueRotation: 270,
+    blur: 0,
+    grayscale: 0,
+    sepia: 0,
+    opacity: 100,
+    invert: 0
+},
+softDream: {
+    brightness: 115,
+    contrast: 85,
+    saturation: 110,
+    hueRotation: 10,
+    blur: 2,
+    grayscale: 5,
+    sepia: 20,
+    opacity: 95,
+    invert: 0
+}
 };
 Object.keys(presets).forEach(presetName=>{
     const presetButton = document.createElement("button")
@@ -304,3 +326,4 @@ Object.keys(presets).forEach(presetName=>{
         
     })
 })
+
